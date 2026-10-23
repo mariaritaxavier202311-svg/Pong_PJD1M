@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private float ballSpeed;
+    [SerializeField] private float rotationBallSpeed = 360f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,6 +31,8 @@ public class Ball : MonoBehaviour
         {
             direction = Vector2.left;
         }
+
+        direction.y = Random.Range(-0.5f, 0.5f);
 
         rb.linearVelocity = direction * ballSpeed;
 

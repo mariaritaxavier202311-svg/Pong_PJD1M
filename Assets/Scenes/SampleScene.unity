@@ -1465,8 +1465,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1517777560}
   - component: {fileID: 1517777559}
-  - component: {fileID: 1517777561}
   - component: {fileID: 1517777562}
+  - component: {fileID: 1517777563}
+  - component: {fileID: 1517777561}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1562,6 +1563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   ballSpeed: 5
+  rotationBallSpeed: 360
 --- !u!50 &1517777562
 Rigidbody2D:
   serializedVersion: 5
@@ -1589,6 +1591,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &1517777563
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517777558}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c988d8172b2a0334dba7bb3813795545, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.75
 --- !u!1 &1540022247
 GameObject:
   m_ObjectHideFlags: 0

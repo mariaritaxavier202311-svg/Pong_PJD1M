@@ -1,5 +1,6 @@
 using System.IO;
 using UnityEngine;
+using UnityEngine.Jobs;
 
 public class Ball : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class Ball : MonoBehaviour
 
         launch();
     }
+
+    private void Update()
+    {
+        transform.Rotate(0, 0, rotationBallSpeed * Time.deltaTime);
+
+
+    }
+
 
     private void launch()
     {
@@ -37,5 +46,7 @@ public class Ball : MonoBehaviour
         rb.linearVelocity = direction * ballSpeed;
 
     }
+
+    
 
 }

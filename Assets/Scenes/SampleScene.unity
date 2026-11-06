@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 907679085}
   m_Layer: 0
   m_Name: Leftwall
-  m_TagString: Untagged
+  m_TagString: PlayerWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,6 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b8d5bff63bcd04ba0a4c32e22839d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wall
+  gameMeneger: {fileID: 2096965397}
 --- !u!1 &920917388
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +896,7 @@ GameObject:
   - component: {fileID: 920917392}
   m_Layer: 0
   m_Name: Rhigtwall
-  m_TagString: Untagged
+  m_TagString: AiWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1033,6 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b8d5bff63bcd04ba0a4c32e22839d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wall
+  gameMeneger: {fileID: 2096965397}
 --- !u!1 &976934698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +2066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096965396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 833, y: 994.7753, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

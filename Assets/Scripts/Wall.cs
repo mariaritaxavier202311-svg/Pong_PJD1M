@@ -17,6 +17,8 @@ public class Wall : MonoBehaviour
                 gameMeneger.AIAddPoint();
             }
 
+            other.gameObject.GetComponent<Ball>().ResetBall();
+
         }
        
     }

@@ -4,6 +4,7 @@ using UnityEngine.Jobs;
 
 public class Ball : MonoBehaviour
 {
+
     private Rigidbody2D rb;
 
     [SerializeField] private float ballSpeed;
@@ -47,6 +48,10 @@ public class Ball : MonoBehaviour
 
     }
 
-    
+    public void ResetBall()
+    {
+        rb.linearVelocity = Vector2.zero;
+        transform.position = Vector2.zero;
+    }
 
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerPadle : MonoBehaviour
+public class PlayerPaddle : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Vector2 directionInput;

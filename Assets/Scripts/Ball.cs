@@ -1,7 +1,5 @@
 using System.Collections;
-using System.IO;
 using UnityEngine;
-using UnityEngine.Jobs;
 
 public class Ball : MonoBehaviour
 {
@@ -28,12 +26,10 @@ public class Ball : MonoBehaviour
     private void Update()
     {
         transform.Rotate(0, 0, rotationBallSpeed * Time.deltaTime);
-
-
     }
 
 
-    private void launch()
+    private void Launch()
     {
         Vector2 direction = Vector2.zero;
 
@@ -79,6 +75,6 @@ public class Ball : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         sr.enabled = true;
 
-        launch();
+        Launch();
     }
 }

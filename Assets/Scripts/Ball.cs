@@ -13,13 +13,16 @@ public class Ball : MonoBehaviour
     [SerializeField] private float rotationBallSpeed = 360f;
     [SerializeField] private float timeToMoveBall;
 
+    public bool isMoving;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
-        launch();
+        isMoving = false;
+        Invoke("Launch", timeToMoveBall);
     }
 
     private void Update()
@@ -47,7 +50,7 @@ public class Ball : MonoBehaviour
 
         direction.y = Random.Range(-0.5f, 0.5f);
         rb.linearVelocity = direction * ballSpeed;
-
+        isMoving = true;
     }
 
     public void ResetBall()
@@ -56,6 +59,7 @@ public class Ball : MonoBehaviour
         transform.position = Vector2.zero;
 
         //Invoke("Launch", timeToMoveBall);
+        isMoving = false;
         StartCoroutine(PlayBallRoutine());
     }
 
